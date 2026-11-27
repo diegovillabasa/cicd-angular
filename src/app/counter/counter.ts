@@ -8,7 +8,6 @@ export class Counter {
   protected readonly count = signal(0);
 
   protected increment(): void {
-    variableInexistente++;
     this.count.update((n) => n + 1);
   }
 
