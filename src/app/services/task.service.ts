@@ -23,6 +23,66 @@ export class TaskService {
     this.tasks.update((list) => list.map((t) => (t.id === id ? { ...t, done: !t.done } : t)));
   }
 
+  extra0(): number {
+    return 0;
+  }
+
+  extra1(): number {
+    return 1;
+  }
+
+  extra2(): number {
+    return 2;
+  }
+
+  extra3(): number {
+    return 3;
+  }
+
+  extra4(): number {
+    return 4;
+  }
+
+  extra5(): number {
+    return 5;
+  }
+
+  extra6(): number {
+    return 6;
+  }
+
+  extra7(): number {
+    return 7;
+  }
+
+  extra8(): number {
+    return 8;
+  }
+
+  extra9(): number {
+    return 9;
+  }
+
+  extra10(): number {
+    return 10;
+  }
+
+  extra11(): number {
+    return 11;
+  }
+
+  extra12(): number {
+    return 12;
+  }
+
+  extra13(): number {
+    return 13;
+  }
+
+  extra14(): number {
+    return 14;
+  }
+
   remove(id: number): void {
     this.tasks.update((list) => list.filter((t) => t.id !== id));
   }
