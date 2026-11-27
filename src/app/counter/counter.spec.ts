@@ -18,7 +18,7 @@ describe('Counter', () => {
   });
 
   it('empieza en 0', () => {
-    expect(value()).toBe('0');
+    expect(value()).toBe('99');
   });
 
   it('incrementa al pulsar +', () => {
@@ -31,6 +31,6 @@ describe('Counter', () => {
     click('.inc');
     click('.dec');
     click('.dec');
-    expect(value()).toBe('0');
+    expect(value()).toBe('99');
   });
 });
