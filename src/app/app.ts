@@ -9,5 +9,5 @@ import { TaskList } from './task-list/task-list';
   templateUrl: './app.html',
 })
 export class App {
-  protected readonly title = signal('CI/CD con Angular');
+  protected readonly title = signal('CI/CD con Angular - Version 2');
 }
