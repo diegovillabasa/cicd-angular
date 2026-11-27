@@ -1,0 +1,14 @@
+<section>
+  <h2>Tareas</h2>
+  <input #newTask placeholder="Nueva tarea" (keyup.enter)="add(newTask)" />
+  <button type="button" class="add" (click)="add(newTask)">Añadir</button>
+  <p class="pending">Pendientes: {{ service.pending() }}</p>
+  <ul>
+    @for (t of service.tasks(); track t.id) {
+      <li [class.done]="t.done">
+        <span class="title" (click)="service.toggle(t.id)">{{ t.title }}</span>
+        <button type="button" class="remove" (click)="service.remove(t.id)">✕</button>
+      </li>
+    }
+  </ul>
+</section>
